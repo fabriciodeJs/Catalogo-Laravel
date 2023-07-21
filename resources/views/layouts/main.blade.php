@@ -24,10 +24,10 @@
                 <div id="nav-link-container">
                     <ul id="nav-link">
                         <li>
-                            <a href="#">Login</a>
+                            <a href="/login">Login</a>
                         </li>
                         <li>
-                            <a href="#">Registrar</a>
+                            <a href="/register">Registrar</a>
                         </li>
                     </ul>
                 </div>
@@ -40,7 +40,11 @@
                     <P id="msg">{{ session('msg') }}</P>
                 @endif
             </div>
+
+
             @yield('content')
+
+
         </main>
 
         <footer>
