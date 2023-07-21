@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title', "Olá mundo")
+@section('title', "Dev Lider")
 
 
 @section('content')
@@ -9,15 +9,19 @@
         <h1>Produtos</h1>
     </div>
     <div id="card-container">
-        <a href="/product/">
-            <div class="card">
-                <img src="/img/cars/car.jpg" alt="Product">
-                <div class="description-container">
-                    <h4>BOMBA SUBMERSIVEL ABS/SULZER</h4>
-                    <p>3" UNI 550T 1,5 CV 220V/380V/440V/760V TRIFÁSICA</p>
+        @foreach($products as $product)
+            <a href="/product/">
+                <div class="card">
+                    <img src="/img/cars/car.jpg" alt="Product">
+                    <div class="description-container">
+                        <h4>{{ $product->name }}</h4>
+                        <p>{{ $product->description }}</p>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
+        @endforeach
+
+        <a href="/product/create">Criar Produto</a>
     </div>
 </section>
 

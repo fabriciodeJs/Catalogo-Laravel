@@ -103,10 +103,13 @@ header #nav-link-container #nav-link {
     display: flex;
 }
 
-header #nav-link-container #nav-link li, a{
-    text-decoration: none;
+header #nav-link-container #nav-link li{
     list-style: none;
-    margin: 0 5px;
+}
+
+header #nav-link-container #nav-link a{
+    text-decoration: none;
+    margin: 0 10px;
     font-size: 14px;
     color: var(--primary-color);
     text-shadow: 0 0 0px #000;
@@ -138,8 +141,13 @@ header #nav-link-container #nav-link a:hover{
 
 }
 
+#card-container a {
+    text-decoration: none;
+}
+
 #card-container .card{
-    padding: 20px 30px;
+    margin: 20px 30px;
+    padding: 5px;
 }
 
 #card-container .card img{
@@ -161,14 +169,49 @@ header #nav-link-container #nav-link a:hover{
     font-weight: 500;
 }
 
+/* PRODUCT CREATE */
+
+#product-create-container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+#product-create-container h1{
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2em;
+
+}
+
+.form-group {
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+
+}
+.form-group .form-label{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 10px;
+}
+.form-group .form-control{
+    width: 20;
+}
+
+.btn-submite {
+    display: flex;
+    margin: 0 auto;
+}
+
+
 /* FOOTER */
 
 footer {
     width: 100%;
     background-color: var(--second-color);
     padding: 20px 0;
-    /* position: fixed;
-    bottom: 0; */
+    position: absolute;
+    bottom: 0;
     margin-bottom: 0;
     text-align: center;
 }
